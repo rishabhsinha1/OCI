@@ -1,0 +1,21 @@
+We run it at destination:-
+
+rsync --dry-run -avz testdb@testserver:/u01/testdb /u01/testdb  --delete-after >> /app/oas/script/full_rsync.txt
+
+rsync -avz testdb@testserver:/u01/testdb /u01/testdb  --delete-after
+
+
+========================================robocopy -to sync files between windows server------------
+
+robocopy "e:" \\servername\e$ /mir /MT:80 /ZB /J /LOG+:E:\Robocopy\Prod-HA_%DATE:~7,2%-%DATE:~4,2%-%DATE:~10,4%.txt
+
+
+this script sync entire E drive with another server
+
+
+robocopy "e:" \\servername\e$ /mir /MT:80 /ZB /J /XD "E:\app" /LOG+:E:\Robocopy\Prod-HA_%DATE:~7,2%-%DATE:~4,2%-%DATE:~10,4%.txt
+
+
+this script will exclude mentioned directories and sync the remaining files
+)
+here it is excluding E:\app directory
