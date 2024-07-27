@@ -1,0 +1,50 @@
+oci bv volume update  --volume-id ocid1.volume.oc1.iad.abuwcljtamge5vgjl2clwaftugtldnsfgohessclzrpilo47p5y5j7zbtyvq --size-in-gbs 100
+
+
+##At Server level:-
+-----------------------
+
+#Step1:- increase the size at device level
+---------------------------------------------
+1> Verify existing size.
+lsblk -ap /dev/sdb | head -2
+
+2> run the scan command
+sudo dd iflag=direct if=/dev/sdb of=/dev/null count=1
+
+echo "1" | sudo tee /sys/class/block/sdb/device/rescan
+
+
+[Result] Physical disk will get increased.
+Step2:- Verify if partition exist:-
+--------------------------------------
+[root@testrepo1 test]# sudo parted /dev/sdb print
+[Expected output]
+Partition Table: msdos
+
+Step3:- Increase the partition(part no -1) to new size:-
+---------------------------------------------------
+[root@testrepo1 test]# sudo growpart /dev/sdb 1
+
+# lvdisplay -am /dev/mapper/vg_u01-lv_u01
+
+1> Check the current Physical Volume size:
+
+#pvdisplay /dev/sdb1
+Total PE              12799
+
+2> Resize the Physical Volume
+
+# pvresize /dev/sdb1
+#pvdisplay /dev/sdb1
+Total PE              15359
+
+Verfiy if size extended by lsblk.
+
+3> Extend the Logical volume
+
+lvextend -l +100%FREE /dev/mapper/vg_u01-lv_u01
+
+4> resize the filesystem
+
+resize2fs /dev/mapper/vg_u01-lv_u01
