@@ -1,0 +1,8 @@
+cat /etc/proc | grep /u11
+cat /proc/mounts | grep u11
+
+  # lsof | grep u11
+  kill -9 process_id
+  umount /u11
+  mount -t ext4 /dev/mapper/vg_u11-lv_u11 /u11
+  mount -o remount,rw /dev/mapper/vg_u11-lv_u11
