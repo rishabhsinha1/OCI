@@ -1,0 +1,33 @@
+oci compute instance list --compartment-id ocid1.compartment.oc1..aaaaaaaax3b3x3gxjbxwpa2x4wkk42cfjihi6buklaml4dew5fymrczgn3da | jq -r '(.data[] | [."display-name",."id"]) | @csv' | grep test
+
+oci os object put -bn sdff-app-backup --file $name
+
+oci os object list --all --bucket-name ddfe2-db-backup
+
+
+oci network private-ip list --subnet-id ocid1.subnet.oc1.eu-frankfurt-1.aaaaaaaaynbnb2vflknpily2vjsa55wraillxeth72cxh47zbq4lg6kvclnq --query 'data[]."ip-address"' | wc -l
+
+
+oci compute instance update --instance-id ocid1.instance.oc1.eu-frankfurt-1.antheljsvk7qqvac5frjiay26y6mwn6smtgzohenrcwvugifx46az6zw7onq --shape VM.Standard.E4.Flex --shape-config '{"ocpus": "3"}' --force
+
+oci bv boot-volume-backup create --boot-volume-id ocid1.bootvolume.oc1.eu-frankfurt-1.abtheljsb2k4qu2ubx6vp66kp2tw22aawv3vjn3jbebeomy2zwzijbft7oja --display-name servername101_09152022 --type FULL
+
+oci compute instance action --action start --instance-id ocid1.instance.oc1.eu-frankfurt-1.antheljsvk7qqvac5frjiay26y6mwn6smtgzohenrcwvugifx46az6zw7onq
+
+oci logging log --profile DR create --display-name "objectstorage_db_backup_write" --log-group-id ocid1.loggroup.oc1.phx.iuyt --log-type SERVICE --is-enabled true --configuration file://~/ObjectStorage/objectstorage_configuration.json
+
+oci logging log --profile DR list --log-group-id ocid1.loggroup.oc1.phx.hhjjj --query 'data[*].{Name:"display-name"}' --output table
+
+oci os bucket update --namespace idvkto34343 --name objstorgae-app-backup --compartment-id ocid1.compartment.oc1..iiuu --versioning Enabled
+
+Add:-
+oci os object put -bn oamp1-app-backup --file app_gold_backup.tar.gz
+
+List:-
+oci os object list --bucket-name soau2-app-backup --prefix SOAU1_EXP
+
+oci os object list --all --bucket-name soau2-app-backup --prefix soau1_EXP
+
+Delete:-
+oci os object get -bn soau1-app-backup --name saou1-app-bkp.log  --file /app/oas/backup_script/soau1_appfs_bkp.log
+
