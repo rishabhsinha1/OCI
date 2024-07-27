@@ -1,0 +1,315 @@
+[root@test test]# cat qc.sh
+echo "#####Stop Firewall Services#####"
+service firewalld stop
+
+echo "####Update /etc/hosts entries#####"
+chattr -i /etc/hosts
+
+f_host=/etc/hosts
+
+cp -pr $f_host $f_host.$(date +%m%d%Y)
+
+echo "Current o/p of /etc/hosts -before change"
+cat $f_host
+#echo "Pass the host entries for oem in below format"
+#echo "-------------------------------------------------------------------"
+#echo "10.1.1.5 emcc.marketplace.com oemapplicationserver101.domain.com"
+#echo "-------------------------------------------------------------------"
+#read oem
+echo "Pass the host entries for server in below format"
+echo "--------------------------------------------------------------------------------------------------------------"
+echo "9898.877.11.988 dd.dd.com dd.usiad1dev1app1.dd.oraclevcn.com dd"
+echo "--------------------------------------------------------------------------------------------------------------"
+read epm
+
+#echo $oem >> $f_host
+echo $epm >> $f_host
+echo 10.1.1.5 emcc.marketplace.com oemapplicationserver101.domain.com >> $f_host
+echo 10.1.1.6   dnsserver.test.domain >> $f_host
+
+echo "Current o/p of /etc/hosts - After Change"
+cat $f_host
+
+a="`hostname -i`"
+b=" `hostname -f`"
+d=" $(cat /etc/hosts | grep `hostname` | cut -d ' ' -f3)"
+c=" `hostname`"
+
+e1=$a$b$d$c
+e2=$a$c.test.domain$b$d$c
+
+echo "---------------------------------------------------"
+echo $e1
+echo $e2
+echo "---------------------------------------------------"
+
+
+   cp $f_host $f_host.bkp
+   sed "s/$e1/$e2/g" < $f_host.bkp > $f_host
+   rm $f_host.bkp
+
+cat /etc/hosts
+
+sleep 10
+
+echo "######Updating Access file#######"
+sh /root/test/access_ch.sh
+
+cat /etc/security/access.conf
+sleep 10
+echo "####Updating Sudoer file#####"
+sh /root/test/sudoers_ch.sh
+
+cat /etc/sudoers
+sleep 10
+echo "############appuser user creation########"
+service sssd stop
+service sssd status
+
+echo "Pass the application user name to be created"
+echo "For SIT - appuser"
+echo "For UAT - appuser"
+echo "For PROD - appuser"
+echo "user:"
+read applicationuser
+
+groupadd -g 54321 oinstall
+groupadd -g 54322 dba
+adduser $applicationuser -u 54324 -g oinstall
+usermod -G dba $applicationuser
+
+echo $(id $applicationuser)
+
+cd /app
+mkdir appuser
+chown -R $applicationuser:dba appuser
+
+ls -lrth
+chage -I -1 -m 0 -M 99999 -E -1 appuser
+chage -I -1 -m 0 -M 99999 -E -1 root
+chage -I -1 -m 0 -M 99999 -E -1 opc
+echo "############appuser user creation COMPLETED########"
+sleep 10
+echo "####################OEM SETUP STARTED#########################"
+echo "###Stopping sssd services###"
+service sssd status
+
+echo "###Creating oem ###"
+cd /root/test
+
+sh oem_app.sh > `hostname`.$(date +%m%d%Y)
+
+cat `hostname`.$(date +%m%d%Y)
+
+echo "###Deleting password for oem user###"
+passwd -d oem
+
+echo "###Adding to group###"
+usermod -G oinstall oem
+
+###ID details###
+echo $(id oem)
+
+echo "###Set the password to never expiry###"
+chage -I -1 -m 0 -M 99999 -E -1 oem
+
+chage -l oem
+
+echo "###Create Directory###"
+
+mkdir -p /root/test
+mkdir -p /root/test
+
+
+cd /root/test
+echo inventory_loc=/root/test/oraInventory > oraInst.loc
+echo inst_group=oinstall >> oraInst.loc
+
+cd /l01/
+chown -R oem:dba app/
+
+echo "###Verifying Directory structure###"
+
+echo `pwd`
+ls -lrth
+
+cd /l01/app/
+echo `pwd`
+ls -lrth
+
+
+echo "###Installing OEM Agent###"
+
+su - oem -c "sh /root/test/oem_agent_installation.sh"
+
+echo "####################OEM SETUP COMPLETED#########################"
+sleep 10
+
+
+echo "####################QUALYS SETUP STARTED#########################"
+
+echo "###Creating qualys user###"
+cd /root/test/qualys/
+
+./test.sh > `hostname`.$(date +%m%d%Y)
+
+cat `hostname`.$(date +%m%d%Y)
+
+echo "###Deleting password for qualys user###"
+passwd -d qualys
+
+###ID details###
+echo $(id qualys)
+
+echo "###Set the password to never expiry###"
+chage -I -1 -m 0 -M 99999 -E -1 qualys
+
+chage -l qualys
+
+echo "####################QUALYS SETUP COMPLETED#########################"
+sleep 10
+echo "####################IWA Setup STARTED##############################"
+
+
+
+#echo "####################IWA Setup COMPLETED##############################"
+
+sleep 10
+echo "####Update /etc/security/limits.conf####"
+
+f_limits=/etc/security/limits.conf
+
+cp -pr $f_limits $f_limits.$(date +%m%d%Y)
+
+cp $f_limits $f_limits.bkp
+sed '/# End of file/i *       soft    nofile  65536\n*       hard    nofile  65536\n*       soft    nproc   65536\n*       hard    nproc   65536' < $f_limits.bkp > $f_limits
+rm $f_limits.bkp
+
+
+echo "####Update /etc/resolv.conf####"
+
+chattr -i /etc/resolv.conf
+
+f_resolv=/etc/resolv.conf
+
+cp -pr $f_resolv $f_resolv.$(date +%m%d%Y)
+
+sed -i 's/nameserver 10.1.1.5/#nameserver 10.1.1.5/g' $f_resolv
+
+cp $f_resolv $f_resolv.bkp
+#sed '/#nameserver 10.1.1.5/a nameserver 10.1.1.6\nnameserver 10.1.1.7' < $f_resolv.bkp > $f_resolv
+rm $f_resolv.bkp
+
+cat /etc/resolv.conf
+sleep 10
+echo "####Registering Server to AD#####"
+
+(echo -n 'pass_wrd') | realm join --verbose servername.test.domain --user=aduser --computer-ou="OU=test-OCI Servers,OU=test-OCI,OU=tete Services,DC=sorp,DC=pri"
+
+sleep 15
+echo "####Updating system-auth####"
+
+f_sysauth=/etc/pam.d/system-auth
+
+cp -pr $f_sysauth $f_sysauth.$(date +%m%d%Y)
+
+cp $f_sysauth $f_sysauth.bkp
+sed '/account     required      pam_unix.so/i account     required      pam_access.so' < $f_sysauth.bkp > $f_sysauth
+rm $f_sysauth.bkp
+
+cat /etc/pam.d/system-auth
+
+echo "####Updating password-auth####"
+
+f_passauth=/etc/pam.d/password-auth
+
+cp -pr $f_passauth $f_passauth.$(date +%m%d%Y)
+
+cp $f_passauth $f_passauth.bkp
+sed '/account     required      pam_unix.so/i account     required      pam_access.so' < $f_passauth.bkp > $f_passauth
+rm $f_passauth.bkp
+
+cat /etc/pam.d/password-auth
+
+echo "####Updating SSSD#####"
+
+f_sssd=/etc/sssd/sssd.conf
+
+cp -pr $f_sssd $f_sssd.$(date +%m%d%Y)
+
+sed -i 's/use_fully_qualified_names = True/use_fully_qualified_names = False/g' $f_sssd
+
+cat /etc/sssd/sssd.conf
+
+
+echo "####Update /etc/hosts entries#####"
+f_host=/etc/hosts
+
+a="`hostname -i`"
+b=" `hostname -f`"
+d=" $(cat /etc/hosts | grep `hostname` | cut -d ' ' -f4)"
+c=" `hostname`"
+g=" $(cat /etc/hosts | grep `hostname` | cut -d ' ' -f3)"
+
+e1=$a$b$g$d$c
+e2=$a$g$d$c
+
+echo "---------------------------------------------------"
+echo $e1
+echo $e2
+echo "---------------------------------------------------"
+
+
+
+   cp $f_host $f_host.bkp
+   sed "s/$e1/$e2/g" < $f_host.bkp > $f_host
+   rm $f_host.bkp
+
+chattr +i /etc/hosts
+
+cat /etc/hosts
+
+echo "####Update /etc/resolv.conf####"
+
+f_resolv=/etc/resolv.conf
+
+sed -i 's/#nameserver 10.1.1.5/nameserver 10.1.1.5/g' $f_resolv
+
+chattr +i /etc/resolv.conf
+
+cat /etc/resolv.conf
+sleep 10
+echo "####Starting SSHD#####"
+
+#f_sshd=/etc/ssh/sshd_config
+
+#cp -pr $f_sshd $f_sshd.$(date +%m%d%Y)
+
+#sed -i 's/PasswordAuthentication no/PasswordAuthentication yes/g' $f_sshd
+
+#cat /etc/ssh/sshd_config
+
+service sshd restart; service sshd status ; systemctl enable sshd
+
+echo "####Restart SSSD services####"
+service sssd restart; service sssd status
+systemctl enable sssd
+sleep 5
+echo "##################FIREWALL PORT ADD#############"
+
+service firewalld start
+service firewalld status
+systemctl enable firewalld
+
+sh //root/test/firewall_entries.sh
+sleep 10
+echo "#############################Installing cisco amp########################"
+
+sleep 10
+echo "#############################Installing xterm package########################"
+yum install screen -y
+yum install xterm -y
+sleep 10
+echo "#############################END########################"
+
+[root@test test]#
