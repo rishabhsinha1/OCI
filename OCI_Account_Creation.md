@@ -35,7 +35,41 @@ After Logging in we have to select the Identity provider in the federation optio
 
 ## CREATE COMPARTMENT
 1.	Identity & Security --> Compartments --> Create Compartment
- 
+   ![image](https://github.com/user-attachments/assets/78a98bb3-253d-480f-a31b-49b216a86e01)
+
+   ![image](https://github.com/user-attachments/assets/35f939cb-8b70-408f-9426-9096bb28803b)
+
+   ![image](https://github.com/user-attachments/assets/9767ff4f-8855-4466-b511-87f95ca71957)
+
+2.	Inside this compartment, we have to create child compartments (For Compute and Instance)
+
+   ![image](https://github.com/user-attachments/assets/f6008b61-bb7b-475f-afd8-1bcb7024c47f)
+
+## CREATING A VCN
+
+![image](https://github.com/user-attachments/assets/ee20c1c1-c0b7-41c2-aebf-5f22b49fcadd)
+
+![image](https://github.com/user-attachments/assets/c203b9fb-762c-4f3f-af81-3adcdd9a9c7d)
+
+![image](https://github.com/user-attachments/assets/97e76c0e-29ba-44ba-9094-ea679680d16b)
+
+![image](https://github.com/user-attachments/assets/f4175806-48c0-44c7-907e-54baf85dee7a)
+
+![image](https://github.com/user-attachments/assets/9ee6f85e-245e-42f2-a52b-8b7ecc80c4c5)
+
+![image](https://github.com/user-attachments/assets/eafcec5b-ea54-4a29-b695-33fe61bf591d)
+
+## CREATE COMPUTE INSTANCE
+
+Go to the hamburger option , select compute --> Instances --> create instance.
+
+
+
+
+
+
+
+
 
 
 ### 
