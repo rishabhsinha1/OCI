@@ -13,7 +13,7 @@ Fill the form , verify your mail and create account.
 ![image](https://github.com/user-attachments/assets/8e7a74d7-e28a-47cc-b1bb-8370f86b42bd)
 
 
-**Cloud Account Name: Tenancy Name(Used to login into Oracle Cloud) – **Always ask the client which account name they want(because they might use it as a tag for their billings)
+**Cloud Account Name: Tenancy Name(Used to login into Oracle Cloud)** – Always ask the client which account name they want(because they might use it as a tag for their billings)
 
 ## CREATE COMPARTMENT
 
