@@ -34,6 +34,7 @@ After Logging in we have to select the Identity provider in the federation optio
 ![image](https://github.com/user-attachments/assets/3a2e0451-46cb-41c9-81d9-ea01906e2692)
 
 ## CREATE COMPARTMENT
+
 1.	Identity & Security --> Compartments --> Create Compartment
    ![image](https://github.com/user-attachments/assets/78a98bb3-253d-480f-a31b-49b216a86e01)
 
@@ -62,6 +63,23 @@ After Logging in we have to select the Identity provider in the federation optio
 ## CREATE COMPUTE INSTANCE
 
 Go to the hamburger option , select compute --> Instances --> create instance.
+
+![image](https://github.com/user-attachments/assets/862dd012-2341-4644-b03d-9c82caa6b66f) ![image](https://github.com/user-attachments/assets/393faff6-a4ac-46d0-b3bd-4c5b2e04bb4b)
+
+Click on edit and fill all the details 
+
+![image](https://github.com/user-attachments/assets/7daf1b6f-4915-43e0-a7b8-c49cc0e4c1a3)
+
+![image](https://github.com/user-attachments/assets/a53ed7c2-b245-4b28-afca-305a1aeb5251)
+
+![image](https://github.com/user-attachments/assets/e8e15d09-03bb-49f1-9faf-0b36c596951c)
+
+![image](https://github.com/user-attachments/assets/124ef9be-d554-40b9-b6a5-b1c28e375a91)
+
+![image](https://github.com/user-attachments/assets/3ecb00fd-c749-4082-b8f1-001fb3821980)
+
+![image](https://github.com/user-attachments/assets/eb0f27fb-34f8-45e6-adac-cec1ebcb8795)
+
 
 
 
