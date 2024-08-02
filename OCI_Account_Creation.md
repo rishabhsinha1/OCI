@@ -31,9 +31,11 @@ Select the Single Sign On option(Azure Active Directory Identity Provider):
 
 After Logging in we have to select the Identity provider in the federation option.
 
-
+![image](https://github.com/user-attachments/assets/3a2e0451-46cb-41c9-81d9-ea01906e2692)
 
 ## CREATE COMPARTMENT
+1.	Identity & Security --> Compartments --> Create Compartment
+ 
 
 
 ### 
