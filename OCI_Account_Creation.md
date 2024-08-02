@@ -22,7 +22,14 @@ Fill the form , verify your mail and create account.
 **Add Payment Verification Method** : Add client’s details.
 
 Account created , now we have to login(Cloud Account Name – Tenancy Name).
+![image](https://github.com/user-attachments/assets/32bf8cac-0689-4be3-a810-094a7b68ecbe)
+Select the Single Sign On option(Azure Active Directory Identity Provider):
+![image](https://github.com/user-attachments/assets/a289df33-a8bf-436a-b1d2-f6833a5d4b97)
+After Logging in we have to select the Identity provider in the federation option.
+
+
 
 ## CREATE COMPARTMENT
+
 
 ### 
