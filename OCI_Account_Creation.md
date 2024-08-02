@@ -36,6 +36,7 @@ After Logging in we have to select the Identity provider in the federation optio
 ## CREATE COMPARTMENT
 
 1.	Identity & Security --> Compartments --> Create Compartment
+
    ![image](https://github.com/user-attachments/assets/78a98bb3-253d-480f-a31b-49b216a86e01)
 
    ![image](https://github.com/user-attachments/assets/35f939cb-8b70-408f-9426-9096bb28803b)
