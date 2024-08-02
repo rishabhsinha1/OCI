@@ -14,9 +14,13 @@ Fill the form , verify your mail and create account.
 
 
 **Cloud Account Name: Tenancy Name(Used to login into Oracle Cloud)** – Always ask the client which account name they want(because they might use it as a tag for their billings)
+
 **Home Region** : We can select any Region because the billing structure is same for all regions[**Preference – US EAST (Ashburn)**]
+
 **Address** : Give the client’s address.
+
 **Add Payment Verification Method** : Add client’s details.
+
 Account created , now we have to login(Cloud Account Name – Tenancy Name).
 
 ## CREATE COMPARTMENT
