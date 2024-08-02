@@ -1,5 +1,7 @@
 # CREATING AN ACCOUNT IN ORACLE
 
+## CREATING A NEW ACCOUNT IN ORACLE
+
 Go to the link https://www.oracle.com/cloud/sign-in.html and sign up.
 
 ![image](https://github.com/user-attachments/assets/6146fc54-58d4-49d6-b3e2-d0f2f94bf906)
