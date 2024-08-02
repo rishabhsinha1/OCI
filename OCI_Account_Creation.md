@@ -81,11 +81,20 @@ Click on edit and fill all the details
 
 ![image](https://github.com/user-attachments/assets/eb0f27fb-34f8-45e6-adac-cec1ebcb8795)
 
+## Generating and using SSH Keys
 
 
+![image](https://github.com/user-attachments/assets/105c65ac-b700-4a13-a01f-521c2d3fbbf0)
 
+![image](https://github.com/user-attachments/assets/f37432c1-ac62-428b-9dc0-bdee9111921e)
 
+![image](https://github.com/user-attachments/assets/4d2c1a80-613b-4240-a0ec-778c0defb592)
+       
+![image](https://github.com/user-attachments/assets/8465d462-d336-4df5-b345-0838d13c2da7)
 
+![image](https://github.com/user-attachments/assets/5632a0e7-79c1-4735-86e9-169ec6b0b6f0)
+
+Click on create.
 
 
 
