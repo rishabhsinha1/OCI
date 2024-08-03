@@ -128,7 +128,7 @@ Here we have to add ‘AzureAD’ in the Assign Identity Provider section, also 
 
 Now we will try to login into this account,
 
-Here we can see an AzureAD option to login from Azure  Click on it  Select the account
+Here we can see an AzureAD option to login from Azure --> Click on it --> Select the account
 
 ![image](https://github.com/user-attachments/assets/c277069d-21df-4f22-8da7-7f079d78cf33)
 
