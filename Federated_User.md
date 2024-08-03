@@ -130,7 +130,7 @@ Now we will try to login into this account,
 
 Here we can see an AzureAD option to login from Azure --> Click on it --> Select the account
 
-![image](https://github.com/user-attachments/assets/c277069d-21df-4f22-8da7-7f079d78cf33)
+![image](https://github.com/user-attachments/assets/dd0aacec-97c2-46d2-9530-7b345f3b8cf0)
 
 Here we have to enter password of our account or select email code to this account  Enter the mail id  Send Code.
 
