@@ -18,7 +18,7 @@ Here we can see so many applications, we have to select Oracle
 
 ![image](https://github.com/user-attachments/assets/eabd8ad8-eabb-42b0-91c4-9ee3ebc1e8da)
 
-Inside Oracle  select Oracle Cloud Infrastructure Console and click on Create
+Inside Oracle --> select Oracle Cloud Infrastructure Console and click on Create
 
 ![image](https://github.com/user-attachments/assets/83cf9ffb-5e3d-4a88-a2c8-263888270a2a)
 
@@ -30,7 +30,7 @@ The SAML page will open, Here we have to upload the metadata file which we downl
 
 ![image](https://github.com/user-attachments/assets/c4ae9c97-2073-4393-ad1f-0f7f0b2b17a2)
 
-After adding , we can all the details will be filled but the sign on URL is not filled
+After adding , we can see all the details will be filled but the sign on URL is not filled
 
 ![image](https://github.com/user-attachments/assets/7e1bd859-4c66-4499-a8ab-e3a13df73633)
 
