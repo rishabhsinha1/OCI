@@ -18,11 +18,7 @@ Here we can see so many applications, we have to select Oracle
 
 ![image](https://github.com/user-attachments/assets/eabd8ad8-eabb-42b0-91c4-9ee3ebc1e8da)
 
-Inside Oracle  select Oracle Cloud Infrastructure Console
-
-![image](https://github.com/user-attachments/assets/411b3fda-29fe-4c66-acc2-a5b074cc323f)
-
-Click on Create
+Inside Oracle  select Oracle Cloud Infrastructure Console and click on Create
 
 ![image](https://github.com/user-attachments/assets/83cf9ffb-5e3d-4a88-a2c8-263888270a2a)
 
