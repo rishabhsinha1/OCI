@@ -28,7 +28,7 @@ The OCI Console page will open, here we have to go to Single sign-on and select 
 
 The SAML page will open, Here we have to upload the metadata file which we downloaded above,
 
-![image](https://github.com/user-attachments/assets/d9b03588-4c1a-4824-ae12-ae73603ece06)
+![image](https://github.com/user-attachments/assets/c4ae9c97-2073-4393-ad1f-0f7f0b2b17a2)
 
 After adding , we can all the details will be filled but the sign on URL is not filled
 
