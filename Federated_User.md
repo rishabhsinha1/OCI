@@ -42,17 +42,17 @@ Now we have to assign a user to this single sign on who can only access.
 
 (We want the same user from which we logged into Azure to login into OCI)
 
-Now In the same OCI console, go to user and groups  Add User/Group, and select the user then the user will be added.
+Now In the same OCI console, go to user and groups --> Add User/Group, and select the user then the user will be added.
 
 ![image](https://github.com/user-attachments/assets/afeb2b08-067f-4004-bc0d-7afc52d599b8)
 
-Now we have to go inside the user we created  Edit Properties
+Now we have to go inside the user we created --> Edit Properties
 
 Here we can see our unique mail id from which we have to login is mentioned in other emails
 
 ![image](https://github.com/user-attachments/assets/e63adf96-a091-4f61-8b56-45a1d9fcd414)
 
-Now again we have to go back in Single Sign On  Attributes & Claims
+Now again we have to go back in Single Sign On --> Attributes & Claims
 
 Here we can see in the Unique user Identifier, ‘user.userprincipalname’ is showing
 
