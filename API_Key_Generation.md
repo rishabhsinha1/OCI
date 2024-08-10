@@ -34,5 +34,11 @@ Scroll down and select API Keys option  Add API Key and paste the public key 
 
 Once we click on Add , we will get the preview of configuration file
 
+![image](https://github.com/user-attachments/assets/480ae616-80f7-4a51-8b60-b0400ca1a05b)
+
+We can see the new API Key is generated,
+
+![image](https://github.com/user-attachments/assets/48f8f577-81d2-405d-9bb5-4febd57813e6)
+
 
 
