@@ -42,3 +42,14 @@ Announcement created.
 
 ![image](https://github.com/user-attachments/assets/78688ca4-103d-4cae-a81d-1b7cadbc9c59)
 
+# Create Rule
+
+Go to Observability & Management  Inside events service, select rules and create rule.
+
+![image](https://github.com/user-attachments/assets/16b3cbba-ed8d-45d7-9979-499cc8acd767)
+
+Now enter the details and create rule, mainly we create this rule for networking alerts. 
+
+![image](https://github.com/user-attachments/assets/f09748ce-91c4-4af3-882e-f759c6b57b33)
+
+
