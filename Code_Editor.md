@@ -47,6 +47,6 @@ Run "terraform init"
 
 # Execute the import command
 
-terraform import ocid1.instance.oc1.iad.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+terraform import oci_core_instance.example ocid1.instance.oc1.iad.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
 
