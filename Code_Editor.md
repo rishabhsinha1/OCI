@@ -35,6 +35,12 @@ resource "oci_core_instance" "example" {
 
 # Initialise terraform
 
+![image](https://github.com/user-attachments/assets/5906c8ff-453b-4fde-bb5b-19edd457c4b0)
 
+Run "terraform init"
+
+![image](https://github.com/user-attachments/assets/0e28b2b1-d3cc-4661-83a2-f4cf2a228712)
+
+# Copy the OCID of the compute resource
 
 
