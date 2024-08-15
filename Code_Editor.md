@@ -49,4 +49,47 @@ Run "terraform init"
 
 terraform import oci_core_instance.example ocid1.instance.oc1.iad.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
 
+![image](https://github.com/user-attachments/assets/ff8605a1-394a-4cdc-9c95-ee670b2687b8)
+
+Now run , "terraform state list"
+
+![image](https://github.com/user-attachments/assets/8d273ab6-b73c-44e5-b4df-8de946e62f91)
+
+Now run "terraform state show oci_core_instance.example"
+
+![image](https://github.com/user-attachments/assets/9e595e51-1a3d-4421-b4b8-2b39bbea1bf2)
+
+# Update the output into the terraform file
+
+![image](https://github.com/user-attachments/assets/e026a618-736a-4456-81c7-69497e6e817b)
+
+# Create the import_block.tf File
+
+![image](https://github.com/user-attachments/assets/d5d81813-5ff9-45c6-b707-b7a04c882d5b)
+
+import {
+  to = oci_core_instance.demo_inst_1
+  id = "ocid1.instance.oc1.iad.anuwcljtkbjmbracaynti47g4aij74pcp2fwtsfzbnsvmt42zc5xqyru7y2a"
+}
+
+# Run the terraform plan Command
+
+terraform plan --generate-config-out=compute.tf
+
+![image](https://github.com/user-attachments/assets/610af3da-94e0-4dc5-8e6e-759dbba1aa06)
+
+compute.tf created by terraform 
+
+![image](https://github.com/user-attachments/assets/877827a4-5c8c-4b5e-a8e6-c1f4783d0b94)
+
+
+# Run the terraform apply Command
+
+![image](https://github.com/user-attachments/assets/4b49b789-f689-4453-9ea5-dad2284b5646)
+
+![image](https://github.com/user-attachments/assets/469128ca-bc47-4cbf-87c9-94e941a14e55)
+
+
+
+
 
