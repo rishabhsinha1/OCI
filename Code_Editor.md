@@ -17,13 +17,13 @@ provider "oci" {
   region = var.region
 }
 
-![image](https://github.com/user-attachments/assets/e98b84b7-d7b2-41f5-8549-e72acf999f8f)
+![image](https://github.com/user-attachments/assets/d7b794b2-ae9d-4a4b-ba72-f846200b8007)
 
 Update vars.tf
 
 variable region { default = "us-ashburn-1"}
 
-![image](https://github.com/user-attachments/assets/13aca0f7-321a-4391-a4d1-56c1dbf85a6f)
+![image](https://github.com/user-attachments/assets/7f77ea5b-baa4-4ab1-8348-2807a354f6d4)
 
 Update main.tf for an instance
 
@@ -31,7 +31,7 @@ resource "oci_core_instance" "example" {
     #
 }
 
-![image](https://github.com/user-attachments/assets/3fed34a9-bb23-43dd-9fcc-0e188af402d0)
+![image](https://github.com/user-attachments/assets/9e4d0adc-c0fb-43a3-9596-1671ead69f9d)
 
 # Initialise terraform
 
