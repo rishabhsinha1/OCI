@@ -1,6 +1,7 @@
 # Create framework in Code Editor
 
 Step1: Open code editor
+
 ![image](https://github.com/user-attachments/assets/0490c83f-0d00-49bd-bbf6-082c681aaa8b)
 
 Step2: Create a Folder in workspace and Create a modular folder
