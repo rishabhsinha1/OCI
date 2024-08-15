@@ -4,7 +4,8 @@ Step1: Open code editor
 ![image](https://github.com/user-attachments/assets/0490c83f-0d00-49bd-bbf6-082c681aaa8b)
 
 Step2: Create a Folder in workspace and Create a modular folder
-![image](https://github.com/user-attachments/assets/d43b7795-6df7-4b1f-a573-4e6f68ab2317)
+
+![image](https://github.com/user-attachments/assets/c1b4a144-108d-4193-b947-a45e6c42cf54)
 
 Step3: Create 3 files.
 main.tf, vars.tf, provider.tf
