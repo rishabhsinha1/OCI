@@ -43,4 +43,10 @@ Run "terraform init"
 
 # Copy the OCID of the compute resource
 
+![image](https://github.com/user-attachments/assets/f72cb91b-8ab6-4c89-b02c-ef6de4567589)
+
+# Execute the import command
+
+terraform import ocid1.instance.oc1.iad.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa
+
 
