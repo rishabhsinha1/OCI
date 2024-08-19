@@ -85,7 +85,7 @@ $ fn -v deploy --app Helloworld-app
 
 ![image](https://github.com/user-attachments/assets/a42900d0-0a26-4555-a4ec-d4faddb98ba8)
 
-## STEP11: Let's invoke the function
+## STEP 11: Let's invoke the function
 
 $ fn invoke Helloworld-app hello-java
 Hello, world!
