@@ -31,7 +31,7 @@ Now we have to paste the public key which we have created above and create a con
 
 ![image](https://github.com/user-attachments/assets/0e4f89a8-cfd6-40c0-9360-08f65df5fa2b)
 
-Console connection created  click on three dots and copy the serial console connection for linux.
+Console connection created --> click on three dots and copy the serial console connection for linux.
 
 ![image](https://github.com/user-attachments/assets/0094a5cf-ca0f-466f-90c0-f797eb5ffbe0)
 
