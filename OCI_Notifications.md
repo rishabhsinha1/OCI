@@ -52,4 +52,20 @@ Now enter the details and create rule, mainly we create this rule for networking
 
 ![image](https://github.com/user-attachments/assets/f09748ce-91c4-4af3-882e-f759c6b57b33)
 
+Rule created
 
+![image](https://github.com/user-attachments/assets/4c9d41e9-452d-40c8-93b3-42218a04c145)
+
+# Alert Validation
+
+Now the notification service is created, we have to validate that it is working fine or not.
+
+So we will create a new local peering gateway and check if we receive any alerts.
+
+Local Peering Gateway created.
+
+![image](https://github.com/user-attachments/assets/12f9463c-9272-4ba4-8807-6949b71236e0)
+
+We have received the alert in the mail.
+
+![image](https://github.com/user-attachments/assets/6b873de0-235e-46da-a957-a491dbde2c5d)
