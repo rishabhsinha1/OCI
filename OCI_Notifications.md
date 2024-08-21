@@ -68,4 +68,4 @@ Local Peering Gateway created.
 
 We have received the alert in the mail.
 
-![image](https://github.com/user-attachments/assets/6b873de0-235e-46da-a957-a491dbde2c5d)
+![image](https://github.com/user-attachments/assets/48931b5a-59a9-4cc5-9bdb-9a19b29f535c)
