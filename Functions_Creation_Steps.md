@@ -2,7 +2,8 @@
 
 ## Step1: Create Functions
 
-![image](https://github.com/user-attachments/assets/1fa220be-a6e5-4598-a583-ed5884696d95)
+![358945800-1fa220be-a6e5-4598-a583-ed5884696d95](https://github.com/user-attachments/assets/5d028958-98d6-44b0-9f46-920669c78d74)
+
 
 ![image](https://github.com/user-attachments/assets/1f70aed6-e0d2-4b9f-99c9-4b104603c070)
 
@@ -53,7 +54,7 @@ If you don’t give this details it will try to push into root compartment
 
 ## Step8:Login to the registry
 
-$ docker login -u ‘xxxx/rishabh.sinha2@cognizant.com' fra.ocir.io
+$ docker login -u ‘xxxx/rishabh.sinha@xxx.com' fra.ocir.io
 Password: [PASS THE AUTH TOKEN GENERATED IN STEP7]
 
 ![image](https://github.com/user-attachments/assets/a9fccf4e-eb19-4d1a-974e-c84537c2f12e)
