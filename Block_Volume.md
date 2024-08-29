@@ -139,7 +139,7 @@ echo "1" | sudo tee /sys/class/block/sdb/device/rescan
 
 [Result] Physical disk will get increased.
 
-Step2:- Verify if partition exist:-
+### Step2:- Verify if partition exist:-
 
 --------------------------------------
 sudo parted /dev/sdb print
@@ -147,12 +147,12 @@ sudo parted /dev/sdb print
 [Expected output]
 
 Partition Table: msdos
---------------------------------------
-Step3:- Increase the partition(part no -1) to new size:-
----------------------------------------------------
+
+### Step3:- Increase the partition(part no -1) to new size:-
+
 sudo growpart /dev/sdb 1
 
-# lvdisplay -am /dev/mapper/vg_u01-lv_u01
+lvdisplay -am /dev/mapper/vg_u01-lv_u01
 
 1> Check the current Physical Volume size:
 #pvdisplay /dev/sdb1
