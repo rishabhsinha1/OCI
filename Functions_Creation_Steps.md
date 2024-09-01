@@ -2,18 +2,17 @@
 
 ## Step1: Create Functions
 
-![358945800-1fa220be-a6e5-4598-a583-ed5884696d95](https://github.com/user-attachments/assets/5d028958-98d6-44b0-9f46-920669c78d74)
+![Untitled (2400 x 1080 px)](https://github.com/user-attachments/assets/b67cfb49-2636-42d1-92fa-9a9b0788796b)
 
-
-![image](https://github.com/user-attachments/assets/1f70aed6-e0d2-4b9f-99c9-4b104603c070)
+![Untitled (2400 x 1080 px) (1)](https://github.com/user-attachments/assets/abda2fc0-0de2-4545-bb2f-d989113dbb77)
 
 ## Step2: We can use Cloud shell option to proceed further
 
-![image](https://github.com/user-attachments/assets/8685648d-d39a-4535-9717-fb2cc0fa1390)
+![Untitled design (17)](https://github.com/user-attachments/assets/5ea55ed6-d71e-43a3-9bbd-dee12f4df126)
 
 ## Step3: Open the cloud shell
 
-![image](https://github.com/user-attachments/assets/c801f1f7-8be4-48ca-8d02-b59de2631c7e)
+![3rd stepUntitled (2400 x 1080 px)](https://github.com/user-attachments/assets/c923f31c-90c2-4919-84b2-faaaa0437a91)
 
 ## Step4: Check the context (*) denotes which region context is pointing. Validate If it matches your current region 
 
