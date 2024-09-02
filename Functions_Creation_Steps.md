@@ -21,9 +21,7 @@ $ fn list context
 Switch to right context
 $ fn use context eu-frankfurt-1
 
-
-![image](https://github.com/user-attachments/assets/03c29e03-aa05-4b3c-8861-3dc24abab394)
-
+![Untitled design (18)](https://github.com/user-attachments/assets/eaad77e1-f285-49df-a752-4e797318881c)
 
 ## Step5: Update the context with the function's compartment ID
 
@@ -35,7 +33,7 @@ $ fn update context oracle.compartment-id ocid1.compartment.oc1..aaaaaaaape26buh
 
 $ fn update context registry fra.ocir.io/ctspaas072018/[repo-name-prefix]
 
-![image](https://github.com/user-attachments/assets/fbcf4882-955f-4f13-8bb5-29a6b33b6191)
+![Untitled (7900 x 1280 px) (1)](https://github.com/user-attachments/assets/ba3cce9f-8fe9-438e-b10f-9236821c8588)
 
 ## Step7: Generate an Auth token
 
