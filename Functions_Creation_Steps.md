@@ -75,9 +75,7 @@ Let’s Deploy the function.
 
 $ fn -v deploy --app Helloworld-app
 
-
-![image](https://github.com/user-attachments/assets/c2e973e5-6bc5-40e4-a44b-7eccda9f1533)
-
+![3rd stepUntitled (2400 x 1080 px) (4000 x 1280 px) (1)](https://github.com/user-attachments/assets/03567c57-b676-45d1-9b25-20a5fc10f436)
 
 ![image](https://github.com/user-attachments/assets/9e0490f3-3192-4997-a942-9cfe241c9337)
 
