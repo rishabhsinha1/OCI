@@ -74,7 +74,7 @@ Let’s Deploy the function.
 
 $ fn -v deploy --app Helloworld-app
 
-![3rd stepUntitled (2400 x 1080 px) (4000 x 1280 px) (1)](https://github.com/user-attachments/assets/03567c57-b676-45d1-9b25-20a5fc10f436)
+![dn edit 10](https://github.com/user-attachments/assets/33a1573a-9fe6-49ad-827f-5d562fdd4acc)
 
 ![image](https://github.com/user-attachments/assets/9e0490f3-3192-4997-a942-9cfe241c9337)
 
@@ -88,8 +88,8 @@ Hello, world!
 $ echo -n 'Rishabh' | fn invoke Helloworld-app hello-java
 Hello, Rishabh!
 
+![3rd sep re (1)](https://github.com/user-attachments/assets/4b89184a-3461-4c8f-98f6-81c91b8c74f6)
 
-![image](https://github.com/user-attachments/assets/7d008250-cca9-4c24-b4ab-26c59dff9fb9)
 
 
 
