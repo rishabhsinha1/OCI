@@ -51,7 +51,7 @@ If you don’t give this details it will try to push into root compartment
 
 ## Step8:Login to the registry
 
-$ docker login -u ‘xxxx/rishabh.sinha@xxx.com' fra.ocir.io
+$ docker login -u ‘xxxx/rishabh@xxx.com' fra.ocir.io
 Password: [PASS THE AUTH TOKEN GENERATED IN STEP7]
 
 ![3sep 8 1step](https://github.com/user-attachments/assets/2d252e57-068c-46ce-8c3d-60eb72ed9dbf)
