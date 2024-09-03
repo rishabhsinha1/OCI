@@ -2,7 +2,7 @@
 
 ## Step1: Create Functions
 
-![Untitled (2400 x 1080 px)](https://github.com/user-attachments/assets/b67cfb49-2636-42d1-92fa-9a9b0788796b)
+![dnerw](https://github.com/user-attachments/assets/1752eb9d-e729-41c8-a86d-00e43375a583)
 
 ![Untitled (2400 x 1080 px) (1)](https://github.com/user-attachments/assets/abda2fc0-0de2-4545-bb2f-d989113dbb77)
 
@@ -12,7 +12,7 @@
 
 ## Step3: Open the cloud shell
 
-![3rd stepUntitled (2400 x 1080 px)](https://github.com/user-attachments/assets/c923f31c-90c2-4919-84b2-faaaa0437a91)
+![dn edit 2](https://github.com/user-attachments/assets/727db8d9-5544-4693-b543-65a226c0b971)
 
 ## Step4: Check the context (*) denotes which region context is pointing. Validate If it matches your current region 
 
@@ -21,19 +21,19 @@ $ fn list context
 Switch to right context
 $ fn use context eu-frankfurt-1
 
-![Untitled design (18)](https://github.com/user-attachments/assets/eaad77e1-f285-49df-a752-4e797318881c)
+![3rd sep re](https://github.com/user-attachments/assets/eca64bf2-2cfd-4e9c-b766-35ef0f76adff)
 
 ## Step5: Update the context with the function's compartment ID
 
 $ fn update context oracle.compartment-id ocid1.compartment.oc1..aaaaaaaape26buh5zkbujozgyrlecuplate5qvmllg3ym3ajotrz4q2q6yzq
 
-![image](https://github.com/user-attachments/assets/2b53fc2f-6aeb-47bf-beea-ff4898bc6647)
+![3sep 6step (1)](https://github.com/user-attachments/assets/dfe1de1b-fa13-46ab-8e8f-151e49493902)
  
 ## Step6: Provide a unique repository name prefix to distinguish your function images from other people’s. For example, with 'jdoe' as the prefix, the image path for a 'hello' function image is '<region-key>.ocir.io/<tenancy-namespace>/jdoe/hello:0.0.1'
 
 $ fn update context registry fra.ocir.io/ctspaas072018/[repo-name-prefix]
 
-![Untitled (7900 x 1280 px) (1)](https://github.com/user-attachments/assets/ba3cce9f-8fe9-438e-b10f-9236821c8588)
+![3sep 6step](https://github.com/user-attachments/assets/25e0912b-d0a9-4fbd-90ce-d44a055e27aa)
 
 ## Step7: Generate an Auth token
 
@@ -45,7 +45,7 @@ It configures the fn project context with the ocid of the compartment for reposi
 
 $ fn update context oracle.image-compartment-id <ocid_of_cpompartment_id>
 
-![image](https://github.com/user-attachments/assets/12193e8a-8228-4a51-9ab0-696d7a7542e7)
+![3sep 6step (1)](https://github.com/user-attachments/assets/ec783195-c858-44ec-b7b7-5748433327d7)
 
 If you don’t give this details it will try to push into root compartment
 
