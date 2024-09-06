@@ -9,7 +9,7 @@ https://fra.ocir.io
 docker login <region-key>.ocir.io
 
 $ docker login fra.ocir.io
-Username (tenancynamespace/rishabh.sinha@xyz.com): 
+Username (tenancynamespace/rishabh.@xyz.com): 
 Password: [AUTH TOKEN]
 
 Note: To Logout use $docker logout fra.ocir.io
