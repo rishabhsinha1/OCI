@@ -2,7 +2,7 @@
 
 ## Step1: Create Functions
 
-![dnerw](https://github.com/user-attachments/assets/1752eb9d-e729-41c8-a86d-00e43375a583)
+![dnerw (1)](https://github.com/user-attachments/assets/a76be028-4057-4e59-a81c-e01b88f9001d)
 
 ![Untitled (2400 x 1080 px) (1)](https://github.com/user-attachments/assets/abda2fc0-0de2-4545-bb2f-d989113dbb77)
 
