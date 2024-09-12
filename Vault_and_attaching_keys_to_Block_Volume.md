@@ -10,7 +10,7 @@ Click on Create Vault
 
 Select the Compartment in which we have to create the vault, and click on Create Vault.
 
-![image](https://github.com/user-attachments/assets/1a7bbd73-68b0-4471-a94d-501cf2e31c75)
+![Untitled design (3)](https://github.com/user-attachments/assets/dadddd07-2323-41ab-b1e0-4f76c628ab81)
 
 ![image](https://github.com/user-attachments/assets/11965d83-75c1-4cf9-a9bc-23efd54d4ab6)
 
@@ -26,7 +26,7 @@ Where a key is stored and processed depends on its protection mode.
 
 In key shape also we have three options but usually we go with AES.
 
-![image](https://github.com/user-attachments/assets/7311f9ac-2f40-41d5-bd07-674cf1bc6cb7)
+![dnerw (1620 x 1020 px)](https://github.com/user-attachments/assets/d29a9027-834e-4756-b600-5c4e050983dd)
 
 Key created
 
@@ -42,11 +42,11 @@ Go to our existing block volume and click on assign
 
 Now select the vault which we created and the key and assign it.
 
-![image](https://github.com/user-attachments/assets/90cb31bc-302d-4b7c-80a7-566745892329)
+![Untitled design (4)](https://github.com/user-attachments/assets/5b55686b-f768-4efc-bfa0-22c9ff3e617d)
 
 We might get a error like this while assigning the key , this error means we this compartment where we have our block volume , does not have the permission to manage keys, so we have to create a policy to give this permission.
 
-![image](https://github.com/user-attachments/assets/965f4799-dc67-46cd-a402-6f5c13519135)
+![Untitled design (5)](https://github.com/user-attachments/assets/44c5135d-f2f4-493a-b743-e7ce8b1ca50c)
 
 ## Creating a Policy for Permission to attach the key to Block Volume
 
